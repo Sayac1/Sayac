@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayaç</title>
+    <meta name="google-adsense-account" content="ca-pub-1796588584148196">
+</head>
+<style>
+
+</style>
+<script>
+    let number = 0;
+    function resetbuton() {
+
+        number = 0;
+        document.getElementById("demo").innerHTML = number;
+    }
+    function azaltbuton() {
+
+        number -= 1;
+        document.getElementById("demo").innerHTML = number;
+    }
+    function arttirbuton() {
+        number += 1;
+        document.getElementById("demo").innerHTML = number;
+    }
+
+</script>
+
+<body style="background-color:white">
+    <div>
+        <h1 style="text-align: center;font-family:monospace ;font-size: 50px;">Sayaç</h1>
+        <nav>
+            <button id="resbuton" onclick="resetbuton()" style="width: 100px; height: 60px; border-color: 4px grey;background-color:  grey;border-radius: 10px;"><p style="color:white;">Reset 0 </p></button>
+            <br>
+            <br>
+            <button id="azbuton" onclick="azaltbuton()" style="width: 100px; height: 60px; border-color: 4px black;background-color:  red ;border-radius: 10px;"><p style="color:white;">Azalt - </p></button>
+        </nav>
+    </div>
+    <p id="demo" style="text-align: center;font-size:100px;font-family: monospace;margin-top: 20px; ">0</p>
+    <br>
+    <div style="justify-self:center;">
+        <button id="arttirbuton" onclick="arttirbuton()" style=""><img src="maxresdefault.jpg" alt="button" width="200" style="border-color: white; border: 10px;"></button>
+    </div>
+</body>
+
+</html>
